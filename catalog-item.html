@@ -2,15 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>Барбершоп «Бородинский»</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <a><img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24"></a>
-        </div>
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -22,8 +19,8 @@
             <li>
               <a href="#">Прайс-лист</a>
             </li>
-            <li class="selected">
-              <a>Магазин</a>
+            <li>
+              <a href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -35,7 +32,7 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <h1>Набор для путешествий «Baxter of California»</h1>
       <ul class="breadcrumbs">
         <li>
@@ -76,10 +73,10 @@
           после бритья, шампунь. Набор также может
           стать отличным подарком.
         </p>
-        <span class="item-price">
-          2 900 РУБ.
-        </span>
-        <a class="buy-btn" href="#">Купить</a>
+        <div class="wrapper-price-and-buy">
+          <span class="item-price">2 900 РУБ.</span>
+          <a class="buy-btn" href="#">Купить</a>
+        </div>
         <div class="components-list">
             <h2>В набор входят:</h2>
             <ul>
@@ -103,29 +100,23 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <div class="footer-contacts">
-          <p>
-            Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="#">Как нас найти?</a><br>
-            Телефон: +7 (495) 666-02-66
-          </p>
-        </div>
-        <div class="footer-social">
-          <p>
-            Давайте дружить!
-          </p>
-          <a class="social-btn social-btn-vk" href="#">VK</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-inst" href="#">Instagram</a>
-        </div>
-        <div class="footer-copyright">
-          <p>
-            Разработано:
-          </p>
-          <a class="copyright-btn" href="#">HTML Academy</a>
-        </div>
+      <div class="container clearfix">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
       </div>
     </footer>
   </body>

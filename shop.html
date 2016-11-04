@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24">
+          </a>
+        </div>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -20,7 +26,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -47,16 +53,16 @@
       </ul>
       <div class="content clearfix">
         <aside class="sidebar">
-          <form class="sidebar-form" action="https://echo.htmlacademy.ru" method="get">
+          <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="sidebar-top">
               <legend>Производители:</legend>
               <input type="checkbox" name="baxter" id="baxter-field" checked>
               <label for="baxter-field">BAXTER OF CALIFORNIA</label>
               <input type="checkbox" name="mr-natty" id="mr-natty-field">
               <label for="mr-natty-field">MR NATTY</label>
-              <input type="checkbox" name="suavecito" id="suavecito-field" checked>
+              <input type="checkbox" name="suavecito" id="suavecito-field" checked disabled>
               <label for="suavecito-field">SUAVECITO</label>
-              <input type="checkbox" name="malin-goetz" id="malin-goetz-field">
+              <input type="checkbox" name="malin-goetz" id="malin-goetz-field" disabled>
               <label for="malin-goetz-field">MALIN+GOETZ</label>
               <input type="checkbox" name="murrays" id="murrays-field">
               <label for="murrays-field">MURRAY'S</label>
@@ -65,29 +71,29 @@
             </fieldset>
             <fieldset class="sidebar-bottom">
               <legend>Группы товаров:</legend>
-              <input type="radio" name="products-group" id="shaving-kit-field" value="shaving-kit">
+              <input type="radio" name="products-group" id="shaving-kit-field" value="shaving-kit" disabled>
               <label for="shaving-kit-field">Бритвенные принадлежности</label>
-              <input type="radio" name="products-group" id="means-care-field" value="means-care" checked>
+              <input type="radio" name="products-group" id="means-care-field" value="means-care" checked disabled>
               <label for="means-care-field">Средства для ухода</label>
               <input type="radio" name="products-group" id="accessories-field" value="accessories">
               <label for="accessories-field">Аксессуары</label>
             </fieldset>
-            <button class="show-btn" type="submit">Показать</button>
+            <button class="btn" type="submit">Показать</button>
           </form>
-      </aside>
+        </aside>
         <div class="catalog">
           <article class="catalog-item">
             <figure class="item-image">
               <img src="img/item1.jpg" alt="Набор для путешествия" width="220" height="165">
             </figure>
             <div class="item-details">
-              <a href="#">
+              <a href="item.html">
                 <span class="item-type">Набор для путешествия</span>
                 <span class="item-name">«BAXTER OF CALIFORNIA»</span>
               </a>
               <div class="wrapper-price-and-buy">
                 <span class="item-price">2 900 РУБ.</span>
-                <a class="buy-btn" href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </div>
           </article>
@@ -102,7 +108,7 @@
               </a>
               <div class="wrapper-price-and-buy">
                 <span class="item-price">750 РУБ.</span>
-                <a class="buy-btn" href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </div>
           </article>
@@ -117,7 +123,7 @@
               </a>
               <div class="wrapper-price-and-buy">
                 <span class="item-price">290 РУБ.</span>
-                <a class="buy-btn" href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </div>
           </article>
@@ -132,7 +138,7 @@
               </a>
               <div class="wrapper-price-and-buy">
                 <span class="item-price">500 РУБ.</span>
-                <a class="buy-btn" href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </div>
           </article>
@@ -147,7 +153,7 @@
               </a>
               <div class="wrapper-price-and-buy">
                 <span class="item-price">300 РУБ.</span>
-                <a class="buy-btn" href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </div>
           </article>
@@ -162,15 +168,15 @@
               </a>
               <div class="wrapper-price-and-buy">
                 <span class="item-price">3 900 РУБ.</span>
-                <a class="buy-btn" href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </div>
           </article>
           <div class="pagination">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
+            <a class="btn" href="#">1</a>
+            <a class="btn active" href="#">2</a>
+            <a class="btn" href="#">3</a>
+            <a class="btn" href="#">4</a>
           </div>
         </div>
       </div>

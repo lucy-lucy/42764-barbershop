@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24">
+          </a>
+        </div>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -20,7 +26,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -36,7 +42,7 @@
       <h1>Набор для путешествий «Baxter of California»</h1>
       <ul class="breadcrumbs">
         <li>
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
           <a>Магазин</a>
@@ -75,10 +81,10 @@
         </p>
         <div class="wrapper-price-and-buy">
           <span class="item-price">2 900 РУБ.</span>
-          <a class="buy-btn" href="#">Купить</a>
+          <a class="btn" href="#">Купить</a>
         </div>
         <div class="components-list">
-            <h2>В набор входят:</h2>
+            <span>В набор входят:</span>
             <ul>
               <li>
                 Средство для умывания (50 мл)

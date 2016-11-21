@@ -1314,9 +1314,12 @@ input[type="password"]::-webkit-input-placeholder {
   width: 766px;
   height: 561px;
 
-  background: #e9e5dc url("../img/map.jpg");
+  background: #e9e5dc url("../img/map.jpg") no-repeat center;
   border: 7px solid white;
   /* Почему у меня пропадает тень при скроллинге? */
+  /* И почему карта уезжает куда-то вниз? Что я делаю не так?
+  Откуда у блока с картой появляются position: relative и overflow: hidden?
+  Через iframe все ок, через API просто ужас... ПАМАГИТЕ*/
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   transform: translate(-50%, -50%);
 }
@@ -1324,6 +1327,42 @@ input[type="password"]::-webkit-input-placeholder {
 .modal-content-map .modal-content-close {
   top: -8px;
   right: -49px;
+}
+
+/*@keyframes bounce {
+  0%   {
+    transform: translate(-50%, -2000px);
+  }
+  70%  {
+    transform: translate(-50%, 30px);
+  }
+  90%  {
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}*/
+
+.modal-content-show {
+  display: block;
+  /*animation: bounce 0.6s;*/
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-49%, 0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(-51%, 0);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-overlay {
